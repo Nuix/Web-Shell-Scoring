@@ -44,6 +44,34 @@ This project looks to identify and score potential Web Shells.  This is accompli
 | `\\x65\\x76\\x61\\x6C` | 100 |
 | `\\x28\\x62\\x61\\x73\\x65\\x36` | 100 |
 
+The script only performs this test on item's where the mime type matches the regular expressions `script` or `text`.  As of Nuix 7.8.0.10 possible mime types matched by this are:
+
+- `application/x-executable-script`
+- `application/postscript`
+- `application/vnd.google-apps.script`
+- `application/vnd.vmware.vmdk-descriptor`
+- `application/vnd.bloomberg-text-dump`
+- `text/rtf`
+- `text/x-vcalendar`
+- `text/calendar-entry`
+- `text/x-structured-text`
+- `text/x-nuix-log`
+- `text/x-inf`
+- `text/plain`
+- `text/x-ini`
+- `text/csv`
+- `application/vnd.oasis.opendocument.text`
+- `application/vnd.uof.text`
+- `text/x-log-entry`
+- `text/x-common-log-entry`
+- `text/tab-separated-values`
+- `text/vcard-contact`
+- `text/x-common-log`
+- `text/html`
+- `text/x-windows-registry`
+- `text/calendar`
+- `text/vcard`
+
 The resulting score is then recorded as a custom metadata field named `WebShell Score` against the item.
 
 # Getting Started
