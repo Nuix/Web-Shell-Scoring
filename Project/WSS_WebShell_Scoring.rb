@@ -1,5 +1,6 @@
 # Scores text based on rules.
 # Adds custom metadata "WebShell Score"
+# @version 1.1.0
 
 TYPES = [/text/, /script/].freeze
 RULES = {
